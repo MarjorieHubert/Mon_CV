@@ -1,0 +1,310 @@
+footer
+{
+	padding-bottom: 10px;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+
+
+/*Police personnalisée
+@font-face {
+	font-family: '2Dumb';
+	src: url('2Dumb-webfont.eot');
+	src: url('2Dumb-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('2Dumb-webfont.woff') format('woff'),
+		 url('2Dumb-webfont.ttf') format('truetype'),
+		 url('2Dumb-webfont.svg#2Dumb') format('svg');
+		}
+
+/*Eléments principaux de la page
+body
+{
+	display: flex;
+	background-image:url("images/arriere-plan.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	margin:0;
+}
+
+#bloc_page
+{
+	width: 95%;
+}
+
+#liseret
+{
+	background-color: rgba(42,185,222,0.3);
+	border-radius: 0px 5px 5px 0px;
+	width: 5%;
+	margin-right: 5px;
+	height: 100vh;
+}
+#liseret p
+{
+	opacity: 0;
+}
+
+/*Titres
+
+h1, h2
+{ 
+	font-family: '2Dumb';
+	color:#0855A4;
+	font-weight: bold;
+	text-decoration:underline;
+	text-align:center;
+}
+
+h3
+{
+	font-family: '2Dumb';
+	color:black;
+	font-weight: bold;
+	text-decoration: underline;
+}
+header
+{
+	display: flex;
+	justify-content: space-around;
+	margin: 20px;
+}
+
+#titre_principal
+{
+	flex: 6;
+}
+
+#coordonnees
+{
+	border-radius: 5px;
+	background-color:rgba(8,85,164,0.1);
+	height: 122px;
+	flex: 2;
+	margin-right: 5px;
+	margin-top: 15px;
+	padding-top: 15px;
+}
+
+#photo_cv
+{
+	background:url('images/photo_cv_mini.jpg');
+	background-repeat: no-repeat;
+	border: solid 2px #2AB9DE;
+	border-radius: 5px;
+	box-shadow:3px 3px 8px #2AB9DE;
+	margin-top: 15px;
+	height: 130px;
+	width: 95px;
+}
+
+#photo_cv_description
+{
+	position:relative;
+	top: 120px;
+	width: 99.5%;
+	font-size: 0.6em;
+	color: white;
+	background-color: rgba(24,24,24,0.6);
+	text-align: center;
+}
+
+article
+{
+	display: flex;
+	margin-top: 60px;
+}
+
+article h3
+{
+	text-align: center;
+}
+
+/*Couleurs apparentes et survol des liens
+.DC
+{
+	color:rgb(6, 121, 150);
+	text-decoration: none;
+}
+.DC:hover
+{
+	color:blue;
+	text-decoration: underline;
+}
+
+.openclassrooms
+{
+	color:rgb(6, 121, 150);
+	text-decoration: none;
+}
+.openclassrooms:hover
+{
+	color:blue;
+	text-decoration: underline;
+}
+
+footer
+{
+	display: flex;
+	position: absolute;
+	bottom:0%;
+	width: 93%;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+#documents
+{
+	display: flex;
+}
+
+nav h3
+{
+	font-size: 1em;
+	text-decoration: none;
+}
+
+nav ul
+{
+	display: flex;
+	justify-content: space-around;
+	width: 800px;
+	margin:auto;
+	padding-left: 0px;
+}
+
+nav a
+{
+	color:black;
+	font-size: 1em;
+	text-decoration: none;
+}
+
+nav a:hover
+{
+	color: blue;
+	text-decoration: underline;
+}
+
+/*texte des coordonnées
+span
+{
+	text-decoration:none;
+	font-weight: bold;
+}
+.maps
+{
+	text-decoration:none;
+	color:rgb(64, 115, 224);
+}
+.maps:hover
+{
+	color: blue;
+	text-decoration: underline;
+}
+
+.mail
+{
+	color: rgb(64, 115, 224);
+	text-decoration:none;
+}
+.mail:hover
+{
+	color:blue;
+	text-decoration: underline;
+}
+
+.tel
+{
+	color:rgb(64, 115, 224);
+	text-decoration:none;
+}
+.tel:hover
+{
+	color:blue;
+	text-decoration: underline;
+}
+
+.signature
+{
+	text-align: left;
+	color:black;
+	font-size: 1.5em;
+	font-family: 'Blackadder ITC', Arial, sans-serif;
+}
+
+/*Responsive
+@media all and (max-width: 1024px)
+{
+	#bloc_page
+	{
+		width: 100vw;
+	}
+
+	body 
+	{
+		background :rgb(201, 239, 248);
+	}
+
+	#liseret
+	{
+		display: none;
+	}
+
+	header
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	#photo_cv
+	{
+		display: none;
+	}
+	#titre_principal
+	{
+		font-size: 1.2rem;
+	}
+	article
+	{
+		flex-direction: column;
+		margin-top: inherit;
+	}
+	ul 
+	{
+		list-style: none;
+	}
+	#experience
+	{
+		margin-top: 15px;
+	}
+	#points_forts
+	{
+		margin-top: 15px;
+	}
+
+	footer 
+	{
+		font-size: 14px;
+		margin-bottom: 10px;
+		position: inherit;
+	}
+	
+	#documents
+	{
+		width: 100vw;
+		margin-left: 5px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.signature
+	{
+		display: none;
+	}
+}
+*/
