@@ -1,6 +1,37 @@
+@font-face {
+	font-family: '2Dumb';
+	src: url('2Dumb-webfont.eot');
+	src: url('2Dumb-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('2Dumb-webfont.woff') format('woff'),
+		 url('2Dumb-webfont.ttf') format('truetype'),
+		 url('2Dumb-webfont.svg#2Dumb') format('svg');
+		}
+
+body
+{
+	background-image:url("images/arriere-plan.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	margin:0;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 40px;
+}
+
+section {
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+
 footer
 {
 	padding-bottom: 10px;
+	padding-left: 10px;
 }
 
 a
