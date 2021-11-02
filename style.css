@@ -23,15 +23,8 @@ header {
 	padding-bottom: 40px;
 }
 
-section {
-	padding-left: 10px;
-	padding-bottom: 10px;
-}
-
-footer
-{
-	padding-bottom: 10px;
-	padding-left: 10px;
+section, footer {
+	padding: 10px;
 }
 
 a
