@@ -166,7 +166,8 @@ header{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 600px;
+    min-height: 600px;
+    width: 100%;
   }
 
   .bgimg-3 div img{
