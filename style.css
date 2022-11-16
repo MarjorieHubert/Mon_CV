@@ -1,41 +1,39 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    font: 400 15px/1.8 "Lato", sans-serif;
-  }
+html, body{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
-  header{
-    background-color: rgb(51, 6, 51);
-    height: 90px;
-    width: 100%;
-    margin: 0;
-    position: fixed;
-    z-index: 1;
-  }
+/*HEADER*/
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
 
-  ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 90px;
-    margin: 0;
-  }
+.btncolor {
+    color:white;
+}
 
-  li{
-    list-style-type: none;
-  }
-
-  li a{
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+.anim {
     font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     transition: font-size 0.2s linear 0.1s;
   }
 
-  li a:hover{
+.anim:hover{
     font-size: 30px;
   }
+
+  #navbarNavAltMarkup{
+    text-align: center;
+  }
+
+  div.navbar-nav{
+    align-items: center;
+  }
+  /*------------------------------------------------------*/
 
   /*Images en background*/
   .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
@@ -92,9 +90,8 @@ body, html {
   h1{
     background-color: rgba(51, 6, 51, 0.678);
     color: #fff;
-    width: 50%;
+    width: 60%;
     margin: auto;
-    margin-bottom: 1.5px;
     padding: 10px;
     font-size: 60px;
     letter-spacing: 8px;
@@ -103,9 +100,11 @@ body, html {
     border-bottom-right-radius: 0;
   }
 
-  .caption span.border{
+  .caption p.intro{
     background-color: rgba(51, 6, 51, 0.678);
     color: #fff;
+    width: 80%;
+    margin: auto;
     padding: 18px;
     font-size: 50px;
     letter-spacing: 8px;
@@ -124,7 +123,7 @@ body, html {
     font-size: 50px;
     margin: auto;
     line-height: 120px;
-    font-family: 'Courgette', cursive; /*!!! Police d'écriture qui ne s'applique pas!!!*/
+    font-family: 'Courgette', cursive;
   }
 
   .bgimg-2, .bgimg-3{
@@ -143,8 +142,8 @@ body, html {
     font-size: 18px;
   }
 
-  .bgimg-2 img{
-    width: 30%;
+  article.bgimg-2 img{
+    width: 20%;
     border-radius: 10px;
   }
 
@@ -179,7 +178,7 @@ body, html {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 1400px;
+    min-height: 1400px;
   }
 
   .bgimg-4 div{
@@ -202,7 +201,7 @@ body, html {
   }
 
   .bgimg-5{
-    height: 1200px;
+    min-height: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -252,9 +251,27 @@ body, html {
     text-align: center;
     background-color: rgba(208, 163, 208, 0.931);
   }
+
+  div.GITHUB{
+    width: 100px; 
+    height:100px;
+    align-self: flex-start;
+    border-radius: 50%; 
+    background-color: aliceblue;
+    margin-left: 150px;
+  }
+
+  div.LINKEDIN{
+    width: 100px; 
+    height:100px;
+    align-self: flex-end;
+    border-radius: 50%; 
+    background-color: aliceblue;
+    margin-right: 150px;
+  }
   
   /*Bouton + animation*/
-  button{
+  button.topUp{
     position: fixed;
     z-index: 2;
     bottom: 20px;
@@ -285,8 +302,124 @@ body, html {
     margin-top: 4px;
   }
 
-  button:hover{
+  button.topUp:hover{
     width: 60px;
     height: 60px;
     background-color: rgb(192, 159, 192);
+  }
+
+  /*MEDIA QUERIES*/
+
+  @media screen and (max-width:480px){
+    h1.intro{
+      font-size: 20px;
+      border-radius: initial;
+      margin: 0;
+      width: 100%;
+      height: 60px;
+    }
+
+    div.caption p.intro{
+      font-size: 20px;
+      letter-spacing: 5px;
+      border-top-left-radius: initial;
+      border-top-right-radius: initial;
+      width: 95%;
+    }
+
+    h2{
+      font-size: 30px;
+    }
+
+    .bgimg-2{
+      flex-direction: column-reverse;
+      justify-content: space-evenly;
+    }
+
+    .bgimg-2 p{
+      width: 80%;
+      font-size: 16px;
+      margin: 10px;
+    }
+
+    article.bgimg-2 img{
+      width: 50%;
+      border-radius: 50%;
+      margin: 10px;
+    }
+
+    .bgimg-3 section{
+      width: 80%;
+    }
+
+    .bgimg-4 div{
+      width: 80%;
+      margin: 10px;
+    }
+
+    .bgimg-5 div{
+      margin: 10px;
+    }
+
+    .bgimg-7 div:nth-child(2){
+      width: 80%;
+      margin: 15px;
+    }
+
+    article.bgimg-7 div.adress{
+      width: 80%;
+    }
+  }
+
+  @media screen and (max-width:768px){
+    h1{
+      font-size: 50px;
+    }
+
+    .caption p.intro{
+      font-size: 40px;
+    }
+
+    h2{
+      font-size: 30px;
+    }
+
+    .bgimg-2{
+      flex-direction: column-reverse;
+      justify-content: space-evenly;
+    }
+
+    .bgimg-2 p{
+      width: 80%;
+      font-size: 16px;
+      margin: 10px;
+    }
+
+    article.bgimg-2 img{
+      width: 50%;
+      border-radius: 50%;
+      margin: 10px;
+    }
+
+    .bgimg-3 section{
+      width: 80%;
+    }
+
+    .bgimg-4 div{
+      width: 80%;
+      margin: 10px;
+    }
+
+    .bgimg-5 div{
+      margin: 10px;
+    }
+
+    .bgimg-7 div:nth-child(2){
+      width: 80%;
+      margin: 15px;
+    }
+
+    article.bgimg-7 div.adress{
+      width: 80%;
+    }
   }
