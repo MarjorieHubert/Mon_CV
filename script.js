@@ -13,4 +13,16 @@ AOS.init({
 
         
     });
+    $( window ).scroll(function() {
+        
+
+        if ($(document).scrollTop()>=$('#propos').offset().top-100) {
+            $( ".topUp" ).css( "display", "block" );
+        } else {
+            $( ".topUp" ).css( "display", "none" );
+        }
+
+       
+        
+      });
   });
