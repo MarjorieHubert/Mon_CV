@@ -1,3 +1,11 @@
+.reveal {
+  /* position: relative; */
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
 
 #SkillBox {
     font-size: 20px;
@@ -29,7 +37,7 @@
     margin: 20px auto;
 }
 
-#Skill-HTML {
+.active.fade1 {
     width: 100%;
     animation: Animate-HTML 4s;
     -webkit-animation: Animate-HTML 4s;
@@ -66,7 +74,7 @@ to {
     width: 100%}
 }
 
-#Skill-CSS {
+.active.fade2 {
     animation: Animate-CSS 4s;
     -webkit-animation: Animate-CSS 4s;
     -moz-animation: Animate-CSS 4s;
@@ -103,7 +111,7 @@ to {
     width: 90%}
 }
 
-#Skill-BOOTSTRAP {
+.active.fade3 {
   animation: Animate-BOOTSTRAP 5s;
   -webkit-animation: Animate-BOOTSTRAP 5s;
   -moz-animation: Animate-BOOTSTRAP 5s;
@@ -140,7 +148,7 @@ to {
   width: 80%}
 }
 
-#Skill-GIT {
+.active.fade4 {
   animation: Animate-GIT 5s;
   -webkit-animation: Animate-GIT 5s;
   -moz-animation: Animate-GIT 5s;
@@ -177,7 +185,7 @@ to {
   width: 70%}
 }
 
-#Skill-JS {
+.active.fade5 {
   animation: Animate-JS 4s;
   -webkit-animation: Animate-JS 4s;
   -moz-animation: Animate-JS 4s;
@@ -214,7 +222,7 @@ to {
   width: 30%}
 }
 
-#Skill-PHP {
+.active.fade6 {
   animation: Animate-PHP 4s;
   -webkit-animation: Animate-PHP 4s;
   -moz-animation: Animate-PHP 4s;
@@ -251,7 +259,7 @@ to {
   width: 50%}
 }
 /* 
-#Skill-jQuery {
+.active.fade7 {
     animation: Animate-jQuery 5s;
     -webkit-animation: Animate-jQuery 5s;
     -moz-animation: Animate-jQuery 5s;
@@ -288,7 +296,7 @@ to {
     width: 40%}
 }
 
-#Skill-React {
+.active.fade8 {
     animation: Animate-React 4s;
     -webkit-animation: Animate-React 4s;
     -moz-animation: Animate-React 4s;
@@ -325,7 +333,7 @@ to {
     width: 30%}
 }
 
-#Skill-WORDPRESS {
+.active.fade9 {
     animation: Animate-WORDPRESS 4s;
     -webkit-animation: Animate-WORDPRESS 4s;
     -moz-animation: Animate-WORDPRESS 4s;
@@ -362,7 +370,7 @@ to {
     width: 25%}
 }
 
-#Skill-NodeJS {
+.active.fade10 {
     animation: Animate-NodeJS 4s;
     -webkit-animation: Animate-NodeJS 4s;
     -moz-animation: Animate-NodeJS 4s;
